@@ -1,0 +1,27 @@
+h2{
+    color: #003580;
+}
+p{
+    font-size: 14px;
+    color: #000033;
+}
+.class1{
+    color: #ff0000;
+}
+.class2{
+    color: #1f87cc;
+}
+.class3{
+    color: #faa53b;
+}
+.class4{
+    color: #0d7114;
+}
+.img1{
+    width: 100px;
+    height: 160px;
+}
+.img2{
+    width: 200px;
+    height: 130px;
+}

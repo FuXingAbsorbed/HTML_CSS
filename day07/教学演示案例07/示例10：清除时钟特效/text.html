@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="myclock"></div>
+<script>
+    function show(){
+        let date = new Date();
+        let year = date.getFullYear();
+        let month = date.getMonth()+1;
+        let d = date.getDate();
+        let day = date.getDay();
+        let hh = date.getHours();
+        let biao="AM";
+        date.get
+        if(hh>=12){
+            hh-=12;
+            biao="PM";
+        }
+        let mm = date.getMinutes();
+        let ss = date.getSeconds();
+        document.getElementById("myclock").innerHTML =year+"年"+month+"月"+d+"日&nbsp;&nbsp;&nbsp;&nbsp;"+ hh + ":" + mm + ":" + ss+"&nbsp;&nbsp;&nbsp;"+biao+"&nbsp;&nbsp;&nbsp;星期"+day;
+    }
+    show();
+</script>
+</body>
+</html>

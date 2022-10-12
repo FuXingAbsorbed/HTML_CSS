@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="计算两数运算结果" onclick="js(prompt('请输入第一个数'),
+prompt('请输入第二个数'),prompt('请输入运算符'))">
+<script>
+    function js(num ,num1 ,fu){
+        switch (fu) {
+            case "+":
+                alert(num+"+"+num1+"="+(parseInt(num1)+parseInt(num)));
+                break;
+            case "-":
+                alert(num+"-"+num1+"="+(parseInt(num)-parseInt(num1)));
+                break;
+            case "*":
+                alert(num+"*"+num1+"="+(parseInt(num)*parseInt(num1)));
+                break;
+            case "/":
+                alert(num+"/"+num1+"="+(parseInt(num)/parseInt(num1)));
+                break;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkEmail(email) {
+        if(email.length==0){
+            alert("邮箱不能为空！");
+        }else  if(email.indexOf("@",0)<0||email.indexOf(".",0)<0){
+            alert("邮箱地址必须包含@和.")
+        }else {
+            alert("邮箱地址正确，邮箱名称是："+email);
+        }
+    }
+
+    var email=prompt("请输入正确的邮箱地址","susan@soho.com");
+    checkEmail(email);
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>typeof的功能和用法演示</title>
+</head>
+<body>
+<script  type="text/javascript">
+    var width,heigh=10,name="rase";
+    var date=new Date();
+    var arr=new Array();
+    var name2=null;
+    document.write("width:"+typeof (width)+"<br>")
+    document.write("heigh:"+typeof (heigh)+"<br>")
+    document.write("name:"+typeof (name)+"<br>")
+    document.write("date:"+typeof (date)+"<br>")
+    document.write("arr:"+typeof (arr)+"<br>")
+    document.write("name2:"+typeof (name2)+"<br>")
+    var str='今天是2022年9月15日 星期四';
+    var num=str.indexOf("2",4);
+    document.write(str.length)
+    var key=str.charAt(2);
+    document.write(key)
+    document.write(num)
+    var phones=new Array("华为","苹果","小米");
+    phones.push("OPPO");
+    document.write(phones.length);
+    var str3=phones.join("-");
+    document.write(str3)
+    for(var i in phones){
+        document.write(phones[i]+"<br>");
+    }
+</script>
+
+</body>
+</html>

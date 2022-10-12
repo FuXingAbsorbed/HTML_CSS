@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>原型链</title>
+</head>
+<body>
+<script>
+    function Human(){
+        this.foot=2;
+    }
+    Human.prototype.getFoot=function(){
+        return this.foot;
+    }
+
+    function Man(){
+        this.head=1;
+    }
+
+    Man.prototype=new Human();
+    Man.prototype.getHead=function(){
+        return this.head;
+    }
+    var man1=new Man();
+    alert(man1.getFoot());
+    alert(man1 instanceof Man);
+    alert(man1 instanceof Human);
+    alert(man1 instanceof Object);
+</script>
+</body>
+</html>

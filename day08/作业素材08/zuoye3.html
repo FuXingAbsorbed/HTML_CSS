@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div"></div>
+<script>
+    var student={
+        name:"高乐乐",
+        age:15,
+        me:"我叫高乐乐，我是一个初中三年级的学生，我非常喜欢音乐和打篮球",
+        show:function (){
+            return "<p>姓名：" +this.name+
+                "</p><p>年龄："+this.age+"</p><p>自我介绍："+this.me+"</p>";
+        }
+    }
+    document.getElementById("div").innerHTML=student.show();
+</script>
+</body>
+</html>

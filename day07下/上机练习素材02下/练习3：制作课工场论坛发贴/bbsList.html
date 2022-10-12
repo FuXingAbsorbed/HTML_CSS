@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>课工场论坛列表</title>
+    <link href="css/bbs.css" rel="stylesheet">
+</head>
+<body>
+<div class="bbs">
+    <header><span onclick="show()">我要发帖</span></header>
+    <section>
+        <ul>
+            <li>
+                <div>
+                    <img src="images/tou01.jpg">
+                </div>
+                <h1>如何学习web前端工程</h1>
+                <p> 啊是擦<span>1大苏打</span></p>
+            </li>
+        </ul>
+    </section>
+    <div class="post">
+        <input class="title" placeholder="请输入标题（1-50个字符）">
+        所属版块：<select><option>请选择版块</option><option>电子书籍</option><option>新课来了</option><option>新手报到</option><option>职业规划</option></select>
+        <textarea class="content"></textarea>
+        <input class="btn" value="发布" onclick="fabu()">
+    </div>
+</div>
+<script>
+    let div = document.getElementsByClassName("post")[0];
+    function show() {
+        div.style.display="block";
+    }
+    function fabu() {
+        div.style.display="none";
+        let newLi = document.createElement("li");
+        let newDiv = document.createElement("div");
+        let newImg = document.createElement("img");
+        let num = Math.floor(Math.random()*4+1);
+        newImg.src="images/tou0"+num+".jpg";
+        newDiv.appendChild(newImg);
+        newLi.appendChild(newDiv);
+        let title = document.getElementsByClassName("title")[0].value;
+        let newH1 = document.createElement("h1");
+        newH1.innerHTML=title;
+        newLi.appendChild(newH1);
+        let banBen = document.getElementsByTagName("select")[0].value;
+       /* let select = document.getElementsByTagName("select")[0];
+        let index = select.selectedIndex;
+        let banBen = select.options[index].value;*/
+
+        let text = document.getElementsByClassName("content")[0].value;
+        var date=new Date();
+        var year=date.getFullYear();
+        var month=date.getMonth()+1;
+        var day=date.getDate();
+        var hh=date.getHours();
+        var mm=date.getMinutes();
+        let newP = document.createElement("p");
+        let newSpan = document.createElement("span");
+        newSpan.innerHTML="版本："+banBen+"&nbsp;&nbsp;&nbsp;发表时间："+year+"-"+
+                month+"-"+day+"&nbsp;&nbsp;"+hh+":"+mm;
+        newP.innerHTML=text;
+        newP.appendChild(newSpan);
+        newLi.appendChild(newP);
+        document.getElementsByTagName("ul")[0].appendChild(newLi);
+/*<li>
+               <div>
+                    <img src="images/tou01.jpg">
+                </div>
+                <h1>如何学习web前端工程</h1>
+                <p> 啊是擦<span>1大苏打</span></p>
+            </li>*/
+    }
+</script>
+</body>
+</html>

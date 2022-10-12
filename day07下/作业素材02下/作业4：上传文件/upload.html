@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+<title>上传文件</title>
+    <style>
+        #main{margin:0 auto; width: 500px;}
+        dl{clear: both; width: 100%;}
+        dt{
+            float: left;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="main">
+    <dl id="upload">
+        <dt>文件路径：</dt>
+        <dd><input name="fileImages" type="file" /></dd>
+    </dl>
+    <div id="addBtn" onclick="add()"><input id="up" type="button" value="再上传一个文件" /></div>
+</div>
+<script>
+    function add(){
+        let yuan = document.getElementById("upload");
+        let node = yuan.cloneNode(true);
+        document.getElementById("main").insertBefore(node,document.getElementById("addBtn"));
+    }
+</script>
+</body>
+</html>

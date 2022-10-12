@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>时钟特效</title>
+</head>
+<body>
+<div id="myclock"></div>
+<input type="button" onclick="javascript:clearTimeout(timeout)" value="停止">
+<input type="button" onclick="disptime()" value="启动">
+<script type="text/javascript">
+    var timeout;
+    function disptime(num) {
+        let date = new Date();
+        let hh = date.getHours();
+        let mm = date.getMinutes();
+        let ss = date.getSeconds();
+        document.getElementById("myclock").innerText = hh + ":" + mm + ":" + ss;
+        timeout = setTimeout("disptime()", 1000);
+    }
+</script>
+</body>
+</html>

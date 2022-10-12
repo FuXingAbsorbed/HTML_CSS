@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body>div:first-of-type{
+            width: 990px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        header{
+            height: 50px;
+        }
+        header>img{
+            height: 50px;
+            float: left;
+            margin-left: 60px;
+        }
+        header>span{
+            margin-left: 10px;
+            margin-top: 4px;
+            float: left;
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+        }
+        section{
+            background: url("image/banner.png") 0 center no-repeat;
+            position: relative;
+            height: 475px;
+        }
+        section>div{
+            width: 333px;
+            background-color: white;
+            height: 270px;
+            position: absolute;
+            right: 84px;
+            top: 80px;
+
+        }
+        h3{
+            margin-left: 20px;
+            font-weight: lighter;
+        }
+        h3>span{
+            background: url("image/icon5.jpg") 0 center no-repeat;
+            color: red;
+            font-size: 12px;
+            float: right;
+            display: inline-block;
+            padding-left: 20px;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        form>input{
+            height: 33px;
+            width: 240px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            padding-left: 48px;
+        }
+        input[type=text]{
+            background: url("image/icon1.jpg") 0 center no-repeat;
+        }
+        input[type=password]{
+            background: url("image/icon2.jpg") 0 center no-repeat;
+        }
+        form>div{
+            margin-left: 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        input[type=checkbox],form>div{
+            vertical-align: middle;
+        }
+        form>div>span{
+            float: right;
+            margin-right: 20px;
+        }
+        input[type=submit]{
+            width: 293px;
+            background-color: red;
+            color: white;
+            padding-left: 9px;
+            font-size: 16px;
+        }
+        footer{
+            width: 990px;
+            margin: 0 auto;
+            display: block;
+        }
+        footer>p{
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <header>
+        <img src="image/logo.png">
+        <span class="denglu">欢迎登录</span>
+    </header>
+    <section>
+        <div class="denglu">
+            <h3>京东会员<span>立即注册</span></h3>
+            <form action="">
+                <input type="text" placeholder="邮箱/用户名/已验证手机"><br>
+                <input type="password">
+                <div class="zidongdenglu">
+                    <input type="checkbox">自动登录
+                    <span>忘记密码?</span>
+                </div>
+                <input type="submit" value="登 录">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>关于我们&nbsp;| &nbsp;联系我们| 人才招聘&nbsp;| &nbsp;商家入驻&nbsp;| &nbsp;广告服务&nbsp;| &nbsp;手机京东&nbsp;| &nbsp;友情链接&nbsp;| &nbsp;销售联盟&nbsp;|&nbsp; 京东社区&nbsp;| &nbsp;京东公益&nbsp;| &nbsp;English Site
+        </p>
+        <p>Copyright?2004-2017 &nbsp;&nbsp;京东JD.com&nbsp;&nbsp; 版权所有
+        </p>
+    </footer>
+</div>
+</body>
+</html>

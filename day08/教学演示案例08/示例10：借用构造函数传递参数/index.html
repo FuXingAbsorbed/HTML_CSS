@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>借用构造函数传递参数</title>
+</head>
+<body>
+<script>
+    function Human(name){
+        this.name=name;
+    }
+    //继承了Humans,同时还传递了参数
+    //实例属性
+    function Man(){
+        Human.call(this,"mary");
+        this.age=38;
+
+    }
+    var man1=new Man();
+    alert(man1.name);
+    alert(man1.age);
+</script>
+</body>
+</html>

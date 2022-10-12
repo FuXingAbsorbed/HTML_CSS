@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 320px;
+            height: 320px;
+            border: 3px solid red;
+        }
+        .clear{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        a{
+            width: 100px;
+            height: 100px;
+            background: #FF88FC;
+            text-align: center;
+            line-height: 100px;
+            font-size: 16px;
+            float: left;
+            display: block;
+        }
+        a:hover{
+            background: blue;
+        }
+        div a:nth-of-type(1){
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+        div a:nth-of-type(2){
+            position: relative;
+            left: 110px;
+            top: 10px;
+        }
+        div a:nth-of-type(3){
+            position: relative;
+            left: -190px;
+            top: 210px;
+        }
+        div a:nth-of-type(4){
+            position: relative;
+            left: 210px;
+            top: 110px;
+        }
+        div a:nth-of-type(5){
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="clear">
+    <a href="#">链接1</a>
+    <a>链接2</a>
+    <a>链接3</a>
+    <a>链接4</a>
+    <a>链接5</a>
+</div>
+</body>
+</html>

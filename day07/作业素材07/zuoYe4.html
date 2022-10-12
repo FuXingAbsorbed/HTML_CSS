@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div"></div>
+<script>
+    var date=new Date();
+    var year=date.getFullYear();
+    var mouth=date.getMonth()+1;
+    var day=date.getDate();
+    var hh=date.getHours()+1;
+    var mm=date.getMinutes();
+    var logo="晚上好";
+    if(hh<=12){
+        logo='上午好';
+    }else if(hh>12&&hh<18){
+        logo='下午好'
+    }
+    document.getElementById("div").innerHTML="今天日期："+year+"年"+mouth+"月"+day+"日<br>"+
+        "现在时间："+hh+"点"+mm+"分<br>"+logo+"!欢迎来到贵美";
+</script>
+</body>
+</html>

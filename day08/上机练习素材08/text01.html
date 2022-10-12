@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*var person=new Object();
+    person.name="郎小命";
+    person.age="38";
+    person.job="中国内地男演员、歌手";
+    person.address="中国北京海淀区";
+    person.show=function(){
+        document.write("姓名："+person.name+"<br>");
+        document.write("年龄："+person.age+"<br>");
+        document.write("工作："+person.job+"<br>");
+        document.write("住址："+person.address+"<br>");
+    };*/
+    /*var person={
+        name:"郎小命",
+        age:"38",
+        job:"中国内地男演员、歌手",
+        address:"中国北京海淀区",
+        show:function(){
+            document.write("姓名："+this.name+"<br>");
+            document.write("年龄："+this.age+"<br>");
+            document.write("工作："+person.job+"<br>");
+            document.write("住址："+person.address+"<br>");
+        }
+    };
+    person.show();*/
+    var person=new Object();
+    person.name="黄晓明";
+    person.age="38";
+    person.job="中国内地男演员、歌手";
+    person.address="中国北京海淀区";
+    person.show=function () {
+        document.write("姓名："+this.name+"<br>");
+        document.write("年龄："+this.age+"<br>");
+        document.write("工作："+this.job+"<br>");
+        document.write("住址："+this.address+"<br>");
+    };
+    person.show();
+</script>
+</body>
+</html>

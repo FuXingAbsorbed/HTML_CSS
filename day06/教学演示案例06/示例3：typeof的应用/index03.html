@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=new Array("America" ,"Greece","Britain","Canada","China","Egypt");
+    var arr1=new Array("America","Greece");
+    var num=0;
+    document.write("在以下字符中：<br>")
+    for (let i = 0; i < arr.length; i++) {
+        if(-1!=arr[i].indexOf("a",0)){
+            num++;
+        }
+        document.write(arr[i]+"<br>");
+    }
+    document.write("共有"+num+"个字符串中包含a或A.")
+</script>
+</body>
+</html>

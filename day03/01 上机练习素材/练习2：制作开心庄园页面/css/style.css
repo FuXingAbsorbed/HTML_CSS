@@ -1,0 +1,12 @@
+h1{
+    line-height: 40px;
+    font-weight: bolder;
+}
+span{
+    color: sienna;
+    font-size: 12px;
+    line-height: 20px;
+}
+span,img{
+    vertical-align: middle;
+}

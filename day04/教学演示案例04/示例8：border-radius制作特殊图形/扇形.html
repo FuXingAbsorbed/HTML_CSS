@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>border-radius制作扇形</title>
+    <style>
+        div{
+            background: red;
+            margin: 30px;
+            width: 100px;
+            height: 100px;
+        }
+        div:nth-of-type(1){
+            border-radius: 100px 0 0 0;
+        }
+        div:nth-of-type(2){
+            border-radius: 0 100px 0 0;
+        }
+        div:nth-of-type(3){
+            border-radius: 0 0 100px 0 ;
+        }
+        div:nth-of-type(4){
+            border-radius: 0 0 0 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

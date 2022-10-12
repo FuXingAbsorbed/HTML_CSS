@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header><img src="image/bg_chs.png"> </header>
+    <section>
+        <h1>注册账号</h1>
+        <form action="">
+            <p><label for="name">昵称</label><input type="text" id="name" name="name" required pattern="[-w\u4E00-\u9FA5]{4,10}">
+            长度为4-10个字符</p>
+
+            <p> <label for="pwd">密码</label><input type="password" name="pwd" id="pwd" required pattern="[\dA-Za-z]{6,16}">
+            长度为6-16个字符</p>
+
+            <p><label for="pwdcheck">确认密码</label><input type="password" id="pwdcheck" required>
+            长度为6-16个字符</p>
+
+            <p><label for="number">手机号码</label><input type="number" id="number" name="number" required pattern="1[3578]\d{9}">
+            密码长度为11位，以13|5|7|8开头</p>
+
+            <p><label for="email">邮箱</label><input type="email" id="email" name="email" required></p>
+
+            <p> <label for="age"> 年龄</label><input type="text" id="age" name="age" required pattern="\d|[1-9]\d|1[0-2]\d"></p>
+            <input type="image" src="image/btn.bmp">
+        </form>
+    </section>
+
+</body>
+</html>

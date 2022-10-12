@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+<script>
+    function Student(name,age,me){
+        this.name=name;
+        this.age=age;
+        this.me=me;
+        this.show=function(){
+            let newP = document.createElement("p");
+            newP.innerHTML="<p>姓名：" +this.name+
+                "</p><p>年龄："+this.age+"</p><p>自我介绍："+this.me+"</p>";
+            document.getElementById("body").appendChild(newP);
+        }
+    }
+
+    var student1=new Student("王小明","16","我是高中一年级的学生，身高1.8米，很帅，我喜欢学习语文和英语。");
+    var student2=new Student("黄妞妞","6","我今年6岁了，非常可爱，马上就可以上小学了，就可能有好多好多的小朋友了。");
+    student1.show();
+    student2.show();
+</script>
+</body>
+</html>
